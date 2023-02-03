@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
@@ -12,15 +13,20 @@
 </head>
 <body>
     <header>
-        <h1>Flying</h1>
-    <menu id="itens">
-        <ul>
-            <li> <a href="#">HOME</a> </li>
-            <li> <a href="#">PAÍSES</a></li>
-            <li> <a href="#">SITES</a></li>
-            <li> <a href="#">TOP LUGARES</a></li>
-        </ul>
-    </menu>
+    <nav class="navbar">
+        <div class="icon">
+            <h1>FLYING</h1>
+        </div>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <div  class="nave" id="navegation">
+            <ul>
+                <li><a href="#">Países</a></li>
+                <li><a href="#">Cidades</a></li>
+                <li><a href="#">Trending</a></li>
+            </ul>
+        </div>
+
+    </nav>
     </header>
     <main>
         <article>
@@ -28,5 +34,11 @@
         </article>
 
     </main>
+    <script> function clickMenu() {
+        if(navegation.style.display=='block') {
+            navegation.style.display = 'none' 
+        }
+        else {navegation.style.display = 'block'}
+    }</script>
 </body>
 </html>
